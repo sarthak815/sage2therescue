@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 def getCoordinates(loc):
     try:
-        API_KEY = "i5FirvKqWok47Llil731Lhun0hUgjnyit124TzkE5hM"
+        API_KEY = "rlGYW7Wln1T4kVF97rdR7QCRvOIb-xVKrwrRFxlvA2w"
         resp = requests.get("https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey="+API_KEY+"&searchtext="+loc)
         respJson = resp.json()["Response"]
         viewJson = respJson["View"][0]
