@@ -16,8 +16,8 @@ from iso3166 import countries
 
 class TweetScraper:
     def __init__(self):
-        self.consumer_key = 'F7Jdv3113KEU2QTYACmPbVJ0c'
-        self.consumer_secret = 'HcBTKDePqleHj7ZVcaCdFb2f5aMYWc38ES8h4EdUudqSdCDt4D'
+        self.consumer_key = 'gN7E6RbXXOqm389hzN23PZFBb'
+        self.consumer_secret = 'MvG8vNbp6et4b0ZO6fJcCRcYYx7I4YPSaaNK1Ckn9aG9doGFbL'
         self.access_key= '80507337-VfyQTELYTH5go54ZwR8pPRgn1JPxB6Yx60akNjDRo'
         self.access_secret = 'CZ8in6tw3DOsVEH3QIzRWU4OYy8qRLH8A9xifUi4H84gN'
         self.auth = tweepy.OAuthHandler(self.consumer_key, self.consumer_secret)
