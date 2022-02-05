@@ -20,7 +20,7 @@ def getCoordinates_df(df):
         coordinatesLatitude = []
         coordinatesLongitude = []
         for row in range(len(df)):
-            loc = df.loc[row, "location"]
+            loc = df.loc[row, "locations"]
             try:
                 coordinates = getCoordinates(loc)
                 locCoord = coordinates['coordinates']
