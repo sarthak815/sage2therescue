@@ -51,7 +51,7 @@ class SAModel:
         # self.device = cuda.get_current_device()
         # self.device.reset()
         self.tokenizer = DistilBertTokenizerFast.from_pretrained('distilbert-base-uncased')
-        self.model = TFDistilBertForSequenceClassification.from_pretrained('./AWS_Tweets_Project/streamlit/sa_model/saved_model/', local_files_only=True)
+        self.model = TFDistilBertForSequenceClassification.from_pretrained('AmanPriyanshu/DistilBert-Sentiment-Analysis')
     def predictTweets(self, sentences):
         test_encodings = self.tokenizer(sentences, truncation=True, padding=True)
         test_dataset = tf.data.Dataset.from_tensor_slices((
