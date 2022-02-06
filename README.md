@@ -10,7 +10,7 @@ to clone the GitHub Repository.
 
 Once cloned, use the commands:
 ```py
-get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./setup.ipynb')
+get_ipython().system_raw('cp ./AWS_Tweets_Project/setup.ipynb ./setup.ipynb')
 get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
 ```
 
