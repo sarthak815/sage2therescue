@@ -8,9 +8,10 @@ get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Pro
 ```
 to clone the GitHub Repository.
 
-Once cloned, use the command:
+Once cloned, use the commands:
 ```py
+get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./setup.ipynb')
 get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
 ```
 
-Restart and run all in the streamlit.ipynb notebook.
+Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
