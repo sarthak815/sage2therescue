@@ -5,13 +5,13 @@ from streamlit_folium import folium_static
 import folium
 import pandas as pd
 import numpy as np
-from locationHERE import getCoordinates, getCoordinates_df
+from .locationHERE import getCoordinates, getCoordinates_df
 # from map import make_map
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-import About
-from functions import scrape_and_get
+from .About import app as about
+from .functions import scrape_and_get
 
 
 def make_map(df):
@@ -93,6 +93,6 @@ def app():
 		
 	if st.sidebar.button('About'):
 		emp.empty()
-		About.app()
+		about()
 if __name__ == '__main__':
 	app()
