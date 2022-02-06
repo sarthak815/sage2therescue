@@ -5,18 +5,18 @@ from streamlit_folium import folium_static
 import folium
 import pandas as pd
 import numpy as np
-from .locationHERE import getCoordinates, getCoordinates_df
+from locationHERE import getCoordinates, getCoordinates_df
 # from map import make_map
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-from .About import app as about
-from .functions import scrape_and_get
+from About import app as about
+from functions import scrape_and_get
 
 
 def make_map(df):
 	df = df.values
-	main_map = folium.Map(location=(df[0][2], df[0][3]), zoom_start=10)
+	main_map = folium.Map(location=(df[0][2], df[0][3]), zoom_start=7)
 	for i in range(len(df)):
 		folium.CircleMarker(location=[df[i][2], df[i][3]],
             tooltip=f"{df[i][0]}",
@@ -29,7 +29,7 @@ def make_map(df):
 	return main_map
 
 def app():
-	st.sidebar.image('logo.jpg', use_column_width=500, width=300)
+	st.sidebar.image('./AWS_Tweets_Project/streamlit/logo.jpg', use_column_width=500, width=300)
 	st.title("Sage Rescuer")
 	st.sidebar.title("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAVIGATION")
 	st.markdown("""

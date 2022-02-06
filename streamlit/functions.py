@@ -35,7 +35,7 @@ class TweetScraper:
         return tweets_df
 
 class DetectionModel:
-    def __init__(self, model_path='svc.pb', scaler_path='scaler.pb'):
+    def __init__(self, model_path='./AWS_Tweets_Project/streamlit/svc.pb', scaler_path='./AWS_Tweets_Project/streamlit/scaler.pb'):
         self.disaster_detection_model = pickle.load(open(model_path, 'rb'))
         self.nlp = spacy.load("en_core_web_lg")
         self.scaler = pickle.load(open(scaler_path, 'rb'))
@@ -51,7 +51,7 @@ class SAModel:
         # self.device = cuda.get_current_device()
         # self.device.reset()
         self.tokenizer = DistilBertTokenizerFast.from_pretrained('distilbert-base-uncased')
-        self.model = TFDistilBertForSequenceClassification.from_pretrained('./SAModel/saved_model/', local_files_only=True)
+        self.model = TFDistilBertForSequenceClassification.from_pretrained('./AWS_Tweets_Project/streamlit/sa_model/saved_model/', local_files_only=True)
     def predictTweets(self, sentences):
         test_encodings = self.tokenizer(sentences, truncation=True, padding=True)
         test_dataset = tf.data.Dataset.from_tensor_slices((
