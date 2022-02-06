@@ -13,4 +13,4 @@ Once cloned, use the command:
 get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
 ```
 
-Restart and run all.
+Restart and run all in the streamlit.ipynb notebook.
