@@ -50,7 +50,7 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 
 ## Execution:
 
-Within SageMaker, open a Python Console Terminal and enter:
+Within SageMaker, open a default:Python Console Terminal and enter:
 ```py
 get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
 ```
