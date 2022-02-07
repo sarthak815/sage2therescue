@@ -19,8 +19,8 @@ get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Pro
 
 ```diff
 ! POSSIBLE ERROR: 
-```
 If a clean/fresh environment isn't used, an error occurs during installation/import of transformers python library may take place. 
+```
 
 2. Once cloned, use the commands:
 ```py
