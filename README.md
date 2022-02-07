@@ -64,11 +64,10 @@ get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ip
 
 Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
 
-To restart:
+#### To restart:
 ![restart](/images/restart.png)
 
-In case of the following Error:
-
+#### In case of the following Error:
 ![ngrok-error](/images/error.jpg)
 
 Please restart and run-all, the error happens due to latency and will recover.
