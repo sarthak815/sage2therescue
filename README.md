@@ -15,3 +15,16 @@ get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ip
 ```
 
 Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
+
+## To Modify Tweepy API:
+
+In the [functions.py](https://github.com/sarthak815/sage2therescue/blob/main/streamlit/functions.py), modify:
+
+```py
+class TweetScraper:
+    def __init__(self):
+        self.consumer_key = NONE
+        self.consumer_secret = NONE
+        self.access_key= NONE
+        self.access_secret = NONE
+```
