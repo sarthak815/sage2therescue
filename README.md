@@ -32,6 +32,8 @@ get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ip
 
 4. Restart and run all cells within streamlit.ipynb notebook and wait for complete execution.
 
+5. Click the link as given by Cell No. 5.
+
 #### To restart:
 ![restart](/images/restart.png)
 
