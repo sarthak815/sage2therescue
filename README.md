@@ -13,7 +13,7 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 ```py
 get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
 ```
-to clone the GitHub Repository.
+&nbsp;&nbsp;&nbsp; to clone the GitHub Repository.
 
 2. Once cloned, use the commands:
 ```py
