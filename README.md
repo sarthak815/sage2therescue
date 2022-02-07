@@ -50,7 +50,7 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 
 ## Execution:
 
-Within SageMaker (New instance: GPU-instance), open a default:Python Console Terminal and enter:
+Within SageMaker (Clean Environment: GPU-instance), open a default:Python Console Terminal and enter:
 ```py
 get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
 ```
@@ -66,6 +66,12 @@ Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
 
 To restart:
 ![restart](/images/restart.png)
+
+In case of the following Error:
+
+![ngrok-error](/images/error.jpg)
+
+Please restart and run-all, the error happens due to latency and will recover.
 
 ## API Modifications:
 ### To Modify Tweepy API:
