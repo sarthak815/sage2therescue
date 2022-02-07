@@ -41,6 +41,8 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 2. Deploying on a host server accessible to all those who need it
 3. Making the disaster identification model more accurate using a larger dataset
 
+## Images:
+
 ![1](/images/1.png)
 ![2](/images/2.png)
 ![3](/images/3.png)
