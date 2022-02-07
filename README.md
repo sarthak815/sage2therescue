@@ -7,6 +7,29 @@ During Cyclone Fani, which hit Odisha in 2019, a lot of places ran out of electr
 ## What it does
 The application uses tweepy to retrieve tweets in real-time using keywords given by the user. At the time of a disaster, the city or state can be entered by the user into our application. Using the keyword received it retrieves all the tweets available, giving priority to the most recent tweets. These tweets we then run through a disaster prediction SVC model which was built using sagemaker. This model helps to eliminate tweets that are not disaster-related so that we only account for valid tweets. The newly generated set of tweets that contain only disaster-related tweets is now run through a sentiment analysis model to determine the negativity or positivity of a tweet. Using the sentiment analysis model we assign a float value score between -1 and 1 to each tweet. Now we use Spacy to extract the locations present in each of the tweets and add the score from the tweet to determine a total score for each location based on the sentiment of the tweets describing these places.
 
+## Execution:
+
+Within SageMaker (Clean Environment: GPU-instance), open a default:Python Console Terminal and enter:
+```py
+get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
+```
+to clone the GitHub Repository.
+
+Once cloned, use the commands:
+```py
+get_ipython().system_raw('cp ./AWS_Tweets_Project/setup.ipynb ./setup.ipynb')
+get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
+```
+
+Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
+
+#### To restart:
+![restart](/images/restart.png)
+
+#### In case of the following Error:
+![ngrok-error](/images/error.jpg)
+
+Please restart and run-all, the error happens due to latency and will recover.
 
 ## How we built it
 1. SVC model from sklearn to determine whether a tweet is disaster-related
@@ -47,30 +70,6 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 ![2](/images/2.png)
 ![3](/images/3.png)
 ![4](/images/4.png)
-
-## Execution:
-
-Within SageMaker (Clean Environment: GPU-instance), open a default:Python Console Terminal and enter:
-```py
-get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
-```
-to clone the GitHub Repository.
-
-Once cloned, use the commands:
-```py
-get_ipython().system_raw('cp ./AWS_Tweets_Project/setup.ipynb ./setup.ipynb')
-get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
-```
-
-Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
-
-#### To restart:
-![restart](/images/restart.png)
-
-#### In case of the following Error:
-![ngrok-error](/images/error.jpg)
-
-Please restart and run-all, the error happens due to latency and will recover.
 
 ## API Modifications:
 ### To Modify Tweepy API:
