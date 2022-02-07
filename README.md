@@ -16,7 +16,8 @@ get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ip
 
 Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
 
-## To Modify Tweepy API:
+## API Modifications:
+### To Modify Tweepy API:
 
 In the [functions.py](https://github.com/sarthak815/sage2therescue/blob/main/streamlit/functions.py), modify:
 
