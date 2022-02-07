@@ -9,19 +9,21 @@ The application uses tweepy to retrieve tweets in real-time using keywords given
 
 ## Execution:
 
-Within SageMaker (Clean Environment: GPU-instance), open a default:Python Console Terminal and enter:
+1. Within SageMaker (Clean Environment: GPU-instance), open a default:Python Console Terminal and enter:
 ```py
 get_ipython().system_raw('git clone https://github.com/sarthak815/AWS_Tweets_Project.git')
 ```
 to clone the GitHub Repository.
 
-Once cloned, use the commands:
+2. Once cloned, use the commands:
 ```py
 get_ipython().system_raw('cp ./AWS_Tweets_Project/setup.ipynb ./setup.ipynb')
 get_ipython().system_raw('cp ./AWS_Tweets_Project/streamlit.ipynb ./streamlit.ipynb')
 ```
 
-Restart and run all cells within setup.ipynb and streamlit.ipynb notebook.
+3. Restart and run all cells within setup.ipynb notebook and wait for complete execution.
+
+4. Restart and run all cells within streamlit.ipynb notebook and wait for complete execution.
 
 #### To restart:
 ![restart](/images/restart.png)
